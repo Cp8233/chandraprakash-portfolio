@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chandraprakash | PHP Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Roboto', sans-serif; background: #1e2a3a; color: #f1f1f1; line-height: 1.6; overflow-x: hidden; }
+    
+    header { background: #2c3e50; color: white; padding: 3rem 1rem; text-align: center; animation: fadeIn 1s ease-out; }
+    header h1 { font-size: 2.8rem; letter-spacing: 2px; }
+    header p { font-size: 1.3rem; margin-top: 0.5rem; }
+    
+    section { max-width: 900px; margin: 4rem auto; padding: 0 1rem; animation: slideIn 1.5s ease-out; opacity: 0; transform: translateY(50px); }
+    section.visible { opacity: 1; transform: translateY(0); transition: all 0.6s ease-out; }
+
+    h1, h2, h3 { margin-bottom: 1rem; text-transform: uppercase; color: #3498db; text-align: center; }
+    h2, h3 { font-size: 2rem; letter-spacing: 2px; }
+
+    .skills li, .projects li, .experience li { margin: 1rem 0; font-size: 1.1rem; }
+    ul { list-style: none; padding-left: 0; }
+
+    .card { background: #34495e; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); margin-bottom: 2rem; transition: transform 0.4s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-10px); box-shadow: 0 6px 18px rgba(0,0,0,0.4); }
+
+    .download-btn, .linkedin-btn { background: #2980b9; color: white; padding: 1rem 3rem; border-radius: 30px; text-align: center; display: inline-block; transition: background-color 0.3s, transform 0.3s; margin-top: 2rem; }
+    .download-btn:hover, .linkedin-btn:hover { background: #3498db; transform: scale(1.05); cursor: pointer; }
+
+    .linkedin-btn { background: #0077b5; padding: 0.8rem 2rem; }
+    .linkedin-btn:hover { background: #0e76a8; }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      0% { transform: translateX(-50px); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+
+    /* Scroll Reveal Animation */
+    @keyframes revealOnScroll {
+      0% { opacity: 0; transform: translateY(50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .reveal {
+      animation: revealOnScroll 1.5s ease-out;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Chandraprakash</h1>
+    <p>PHP Developer | Laravel, CodeIgniter, Django</p>
+    <p>📍 Ajeetsar, Rajasthan | 📧 chandraprakash823313@gmail.com | 📱 +91 8233135998</p>
+  </header>
+
+  <section class="about reveal">
+    <h2>About Me</h2>
+    <p>Results-driven PHP Developer with 3+ years of experience in building scalable web applications using Laravel, CodeIgniter, and Django. Proven expertise in backend development, API integration, and performance optimization. I focus on writing clean, maintainable code and delivering solutions that exceed client expectations.</p>
+  </section>
+
+  <section class="skills reveal">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> PHP, JavaScript, jQuery</li>
+      <li><strong>Frameworks:</strong> Laravel, CodeIgniter, Django</li>
+      <li><strong>Frontend:</strong> HTML5, CSS3, Bootstrap</li>
+      <li><strong>Database:</strong> MySQL</li>
+      <li><strong>Tools:</strong> Git, VS Code</li>
+    </ul>
+  </section>
+
+  <section class="experience reveal">
+    <h2>Professional Experience</h2>
+    <div class="card">
+      <h3>PHP Developer – RBSR Apka Budget Home Services Pvt. Ltd.</h3>
+      <p><em>Feb 2025 – Present</em></p>
+      <ul>
+        <li>Built and deployed REST APIs using Laravel & CodeIgniter.</li>
+        <li>Integrated 3rd-party APIs, improving efficiency by 25%.</li>
+        <li>Worked closely with frontend teams to develop responsive features.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>PHP Developer – Maxtra Technologies Pvt. Ltd.</h3>
+      <p><em>May 2023 – Feb 2025</em></p>
+      <ul>
+        <li>Developed 6+ large-scale modules using Laravel and Django.</li>
+        <li>Optimized backend logic, reducing load time by 35%.</li>
+        <li>Conducted code reviews to ensure clean, maintainable code.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>PHP Developer – Tech Zento Solution</h3>
+      <p><em>Apr 2022 – Apr 2023</em></p>
+      <ul>
+        <li>Delivered 8+ web apps using Laravel/CI for SME clients.</li>
+        <li>Implemented automated testing, reducing bugs by 30%.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="projects reveal">
+    <h2>Project Highlights</h2>
+    <ul>
+      <li><strong>Laravel:</strong> Mzigosasa, Call Astro, Astro Mukti</li>
+      <li><strong>CodeIgniter:</strong> SJVN, IGL, Shree Mahavir Packers</li>
+      <li><strong>Django:</strong> ICSI</li>
+    </ul>
+  </section>
+
+  <section class="contact reveal">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:chandraprakash823313@gmail.com">chandraprakash823313@gmail.com</a></p>
+    <p>Phone: +91 8233135998</p>
+    <a href="https://drive.google.com/uc?export=download&id=1dqCeRLJ7fcI5sCdE1yA44cap5xDmWuj2" class="download-btn" download>Download Resume</a>
+    <a href="https://www.linkedin.com/in/chandraprakash-cp-89114225a/" class="linkedin-btn" target="_blank">Connect on LinkedIn</a>
+  </section>
+
+  <script>
+    // Scroll Reveal on Scroll
+    window.addEventListener("scroll", function () {
+      const elements = document.querySelectorAll('.reveal');
+      elements.forEach((el) => {
+        if (el.getBoundingClientRect().top < window.innerHeight) {
+          el.classList.add('visible');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
